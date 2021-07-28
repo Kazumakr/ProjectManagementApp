@@ -38,10 +38,10 @@ public class EmployeeController {
 	
 //	@RequestMapping(value="/save",method=RequestMethod.POST)
 	@PostMapping("/save")
-	public String createEmployee(Employee employee, Model model) {
+	public String createEmployee(Employee employee) {
 		empRepo.save(employee);
 		
-		return "redirect:/";
+		return "redirect:/employees";
 	}
 
 }

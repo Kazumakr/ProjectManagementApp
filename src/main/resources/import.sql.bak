@@ -1,0 +1,18 @@
+-- insert employees
+INSERT INTO employee (employeeid, first_name, last_name, email) VALUES(1,'Phil','Slater','phil@gmail.com');
+INSERT INTO employee (employeeid, first_name, last_name, email) VALUES(2,'Tom','Holland','tom@gmail.com');
+INSERT INTO employee (employeeid, first_name, last_name, email) VALUES(3,'Peter','Parker','peter@gmail.com');
+INSERT INTO employee (employeeid, first_name, last_name, email) VALUES(4,'David','Holland','david@gmail.com');
+
+
+-- insert projects
+INSERT INTO project (project_id, name, stage, description) VALUES (1000, 'Push to production', 'NOTSTARTED','This is test');
+INSERT INTO project (project_id, name, stage, description) VALUES (1001, '2022 Employee Budget', 'COMPLETED','This is test');
+INSERT INTO project (project_id, name, stage, description) VALUES (1002, 'Office Reconstruction', 'INPROGRESS','This is test');
+INSERT INTO project (project_id, name, stage, description) VALUES (1003, 'Internet Security', 'NOTSTARTED','This is test');
+
+-- INSERT PROJECT_EMPLOYEE RELATION
+insert into project_employee (employee_id, project_id) values (1,1002);
+insert into project_employee (employee_id, project_id) values (3,1003);
+insert into project_employee (employee_id, project_id) values (2,1001);
+insert into project_employee (employee_id, project_id) values (4,1000);
